@@ -11,6 +11,10 @@ var styles = {
 }
 
 class AppFooter extends Component {
+  // constructor() {
+  //   super()
+  //   this.handleComplete = this.handleComplete.bind(this)
+  // }
   handleAll () {
     let all = this.refs.all.value
     this.props.SubmitChooseValue(all)
@@ -54,7 +58,8 @@ class AppFooter extends Component {
            className='ui blue button' 
            value='3' 
            ref='complete'
-           onClick={this.handleComplete.bind(this)}
+           onClick={()=>this.handleComplete()}
+          //  onClick={this.handleComplete.bind(this)}
         > 
            已完成 
         </button>

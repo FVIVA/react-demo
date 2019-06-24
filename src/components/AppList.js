@@ -51,7 +51,6 @@ class AppList extends Component {
     return (
       <div>
       { a }
-      { value }
       </div>
     )
   }
